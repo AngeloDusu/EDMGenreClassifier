@@ -6,8 +6,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 load_dotenv()
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
-    client_id=os.getenv("SPOTIPY_CLIENT_ID"),
-    client_secret=os.getenv("SPOTIPY_CLIENT_SECRET")
+    client_id=os.getenv("CLID"),
+    client_secret=os.getenv("SECRET")
 ))
 
 def search_song(song_name: str) -> dict:
